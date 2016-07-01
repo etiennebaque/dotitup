@@ -101,3 +101,19 @@ source ~/.vim/settings.vim
 if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after
 endif
+
+" Custom key mappings
+map <C-S-O> :FZF<ENTER>
+map <S-F> :Ag<ENTER>
+map <C-S-E> :NERDTreeToggle<ENTER>
+
+nmap          <C-W>+     <C-W>+<SID>ws
+nmap          <C-W>-     <C-W>-<SID>ws
+nn <script>   <SID>ws+   <C-W>+<SID>ws
+nn <script>   <SID>ws-   <C-W>-<SID>ws
+nmap          <C-W>>     <C-W>><SID>ws
+nmap          <C-W><     <C-W><<SID>ws
+nn <script>   <SID>ws>   <C-W>><SID>ws
+nn <script>   <SID>ws<   <C-W><<SID>ws
+nmap          <SID>ws    <Nop>
+

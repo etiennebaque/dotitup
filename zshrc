@@ -1,12 +1,12 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="myagnoster"
+ZSH_THEME="agnoster"
 # /Users/adnan/.oh-my-zsh/themes/juanghurtado.zsh-theme
 # /Users/adnan/.oh-my-zsh/themes/af-magic.zsh-theme
 # /Users/adnan/.oh-my-zsh/themes/bureau.zsh-theme
 
-plugins=(git gitfast history zeus ssh-agent bundler zsh-syntax-highlighting history-substring-search brew)
+plugins=(git gitfast history zeus ssh-agent bundler zsh-syntax-highlighting history-substring-search brew ruby)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -29,3 +29,9 @@ alias vi=vim
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+#eval "$(rbenv init -)"
