@@ -12,12 +12,13 @@ endif
 
 " ---
 
-colorscheme Tomorrow-Night
+syntax on
+colorscheme railscasts
 set cursorline
 
 " ---
 
-syntax on
+
 set number " displays line numbers.
 
 " ---
@@ -103,9 +104,12 @@ if filereadable(expand("~/.vimrc.after"))
 endif
 
 " Custom key mappings
-map <C-S-O> :FZF<ENTER>
-map <S-F> :Ag<ENTER>
+map <S-F> :Ag
 map <C-S-E> :NERDTreeToggle<ENTER>
+
+noremap <silent> <C-S>          :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>
 
 nmap          <C-W>+     <C-W>+<SID>ws
 nmap          <C-W>-     <C-W>-<SID>ws
@@ -117,3 +121,4 @@ nn <script>   <SID>ws>   <C-W>><SID>ws
 nn <script>   <SID>ws<   <C-W><<SID>ws
 nmap          <SID>ws    <Nop>
 
+map m <Plug>(easymotion-s)
