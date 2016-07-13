@@ -20,6 +20,7 @@ task :install do
   link_it "agignore"
   link_it "ctags"
   link_it "zshrc"
+  link_it "irbrc"
   link_it "tmux.conf"
   link_it "custom oh my zsh",
     source: "zsh",

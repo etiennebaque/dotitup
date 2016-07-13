@@ -105,7 +105,8 @@ endif
 
 " Custom key mappings
 map <S-F> :Ag
-map <C-S-E> :NERDTreeToggle<ENTER>
+map <C-E> :NERDTreeToggle<ENTER>
+map , :NERDTreeFind<ENTER>
 
 noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
